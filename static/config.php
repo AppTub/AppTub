@@ -1,6 +1,6 @@
 <?php
-$dir = 'C:/inetpub/wwwroot';
-$url = 'http://gamu.lk';
-$title = $_GET['title'] ?? 'GAMU.LK - Sri Lankan&#39;s Marketplace';
+$dir = '/';
+$url = 'http://counterfun.cf';
+$title = $_GET['title'] ?? 'CounterFun 1.6';
 $page = $_GET['page'] ?? null;
 ?>
