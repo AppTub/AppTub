@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="w-100 h-100">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,29 +8,61 @@
 <link rel="icon" href="static/logo.png"/>
 <script src="static/jquery.js"></script>
 <script src="static/style.js"></script>
+
+<script>
+function copy(id)
+{
+if(id=='#txtas')
+{
+$(id).val('connect as.counterfun.cf');
+}
+else
+{
+$(id).val('connect us.counterfun.cf');
+}
+$(id).select();
+document.execCommand('copy');
+alert("Copied. Now paste it into in-game console and hit enter.");
+}
+
+function href(link)
+{
+window.location.href(link);
+}
+</script>
 <title>CounterFun 1.6</title>
 </head>
  
-<body class="bg-dark text-muted">
-<div class="container">
-<div class="d-flex align-self-center">
+<body class="bg-dark text-muted w-100 h-100" background="static/background.jpg">
+<div class="container w-100 h-100">
+<div class="row align-items-center justify-content-center w-100 h-100">
 
-<div class="card mb-3" style="max-width: 540px;">
-<div class="row no-gutters">
+<div class="card bg-dark text-white mb-3 mx-auto my-auto" >
+<div class="row no-gutters align-items-center">
 <div class="col-md-4">
-<img src="static/logo.png" class="card-img" alt="CounterFun">
+<img src="static/vector.png" class="card-img" alt="CounterFun Logo">
 </div>
 <div class="col-md-8">
 <div class="card-body">
-<h5 class="card-title">Welcome to CounterFun 1.6</h5>
-<p class="card-text">This website is under construction. Meanwhile play in our servers below</p>
-<a href="#" class="btn btn-primary">United States</a><a href="#" class="btn btn-primary mx-2">Asia</a>
+<h5 class="card-title">Welcome to <b>CounterFun</b></h5>
+<p class="card-text">A server dedicated to bring fun and something new into <b>Counter-Strike</b> 1.6 game. This is a one man operation so it might take time to add new maps and stuff.</p>
+<form class="form-inline">      
+<input type="text" class="form-control" id="txtas" placeholder="connect as.counterfun.cf" readonly>
+<button type="button" class="btn btn-outline-secondary mx-2" onclick="copy('#txtas')"><i class="fas fa-paste"></i></button>
+<button type="button" class="btn btn-outline-info"><i class="fab fa-steam" onclick="href('steam://connect/as.counterfun.cf')"></i></button>
+</form>
+<form class="form-inline my-2">  
+<input type="text" class="form-control" id="txtus" placeholder="connect us.counterfun.cf" readonly>
+<button type="button" class="btn btn-outline-secondary mx-2" onclick="copy('#txtus')"><i class="fas fa-paste"></i></button>
+<button type="button" class="btn btn-outline-info"><i class="fab fa-steam" onclick="href('steam://connect/us.counterfun.cf')"></i></button>
+</form>
 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 </div>
 </div>
 </div>
-</div> 
+</div>
 
+</div>
 </div>
 </body>
 </html>
