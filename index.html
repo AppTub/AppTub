@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="A server dedicated to bring fun, joy and something new into Counter-Strike 1.6 game. This is a one man operation so it might take time to add new maps and stuff.">
 <link href="static/style.css" rel="stylesheet" type="text/css">
 <link href="static/font.css" rel="stylesheet" type="text/css">
@@ -19,21 +19,18 @@ background-size: cover;
 -o-background-size: cover;
 } 
 </style>
- 
 <script>
 $(function()
 {
 $('#txtas').val("connect as.counterfun.cf");
 $('#txtus').val("connect us.counterfun.cf");
 });
-
 function copy(id)
 {
 $(id).select();
 document.execCommand('copy');
 alert("Copied. Now paste into in-game console and hit enter.");
 }
-
 function href(link)
 {
 window.location.href(link);
@@ -41,7 +38,6 @@ window.location.href(link);
 </script>
 <title>CounterFun</title>
 </head>
- 
 <body class="bg-dark">
 <div class="container">
 <div class="row justify-content-center">
@@ -55,12 +51,12 @@ window.location.href(link);
 <h5 class="card-title">Welcome to <b>CounterFun</b></h5>
 <p class="card-text text-justify">A server dedicated to bring fun, joy and something new into <b>Counter-Strike</b> 1.6 game. This is a one man operation so it might take time to add new maps and stuff.</p>
 <div class="input-group">      
-<input type="text" class="form-control bg-dark btn-success text-success" id="txtas" placeholder="connect as.counterfun.cf" readonly>
+<input type="text" class="form-control bg-dark border-success text-success" id="txtas" placeholder="connect as.counterfun.cf" readonly>
 <button type="button" class="btn btn-success mx-2" onclick="copy('#txtas')"><i class="fas fa-paste"></i></button>
 <button type="button" class="btn btn-info"><i class="fab fa-steam" onclick="href('steam://connect/as.counterfun.cf')"></i></button>
 </div>
 <div class="input-group my-1">   
-<input type="text" class="form-control bg-dark btn-success text-success" id="txtus" placeholder="connect us.counterfun.cf" readonly>
+<input type="text" class="form-control bg-dark border-success text-success" id="txtus" placeholder="connect us.counterfun.cf" readonly>
 <button type="button" class="btn btn-success mx-2" onclick="copy('#txtus')"><i class="fas fa-paste"></i></button>
 <button type="button" class="btn btn-info"><i class="fab fa-steam" onclick="href('steam://connect/us.counterfun.cf')"></i></button>
 </div>
@@ -70,17 +66,8 @@ window.location.href(link);
 </div>
 </div>
 </div>
- 
-<div class="card bg-dark text-white mx-1 my-1">
-<div class="card-header">
-News & Updates<a href="http://twitter.com/counterfuncf"><i class="fab fa-twitter mx-2"></i></a>
 </div>
-<div class="card-body">  
-<p class="card-text text-justify">Couple of new maps have been added to the cycle named <b>fy_bilo</b>, <b>fy_dust</b>, <b>aw_glow</b>, <b>fy_hide</b> and our featured map <b>fy_pool</b>. Colored flashlights and smoke also included in this update and will be available as soon as the next map change.</p>
-</div>
-</div>
-</div>
-<footer class="text-center mx-1 my-4"><small class="text-muted">&copy; CounterFun LLC Sri Lanka 81280 2019</small><a href="http://steamcommunity.com/groups/counterfuncf"><i class="fab fa-steam mx-2"></i></a></footer>
+<footer class="text-center mx-1 my-4"><small class="text-muted">&copy; CounterFun LLC Sri Lanka 81280 2019</small><a href="http://steamcommunity.com/groups/counterfuncf"><i class="fab fa-steam mx-2"></i></a> <a href="http://twitter.com/counterfuncf"><i class="fab fa-twitter mx-2"></i></a></footer>
 <iframe class="invisible" data-aa='1134402' src='http://acceptable.a-ads.com/1134402?size=Adaptive&background_color=343a40&text_color=6c757d&title_color=6c757d&title_hover_color=6c757d&link_color=6c757d&link_hover_color=6c757d' scrolling='no' style='border:0px; padding:0; overflow:hidden' allowtransparency='true'></iframe>
 </body>
 </html>
