@@ -9,51 +9,18 @@
 <link href="static/style.css" rel="stylesheet" type="text/css">
 <link href="static/font.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="static/logo.png"/>
-<script>
-$(function()
-{
-$('#txtas').val("connect as.counterfun.cf");
-$('#txtus').val("connect us.counterfun.cf");
-});
-function copy(id)
-{
-$(id).select();
-document.execCommand('copy');
-alert("Copied. Now paste into in-game console and hit enter.");
-}
-function href(link)
-{
-window.location.href(link);
-}
-</script>
 <title>CounterFun</title>
 </head>
-<body class="bg-warning">
+<body class="bg-dark">
 <div class="container">
 <div class="row justify-content-center">
-<div class="card bg-warning text-dark mx-3 mt-3">
-<div class="row no-gutters">
-<div class="col-md-4">
-<img src="static/logo.png" class="card-img" alt="CounterFun Logo">
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<h5 class="card-title">Welcome to <b>CounterFun</b></h5>
-<p class="card-text text-justify">A server dedicated to bring fun, joy and something new into <b>Counter-Strike</b> 1.6 game. This is a one man operation so it might take time to add new maps and stuff.</p>
-<div class="input-group">      
-<input type="text" class="form-control bg-warning border-success text-success" id="txtas" placeholder="connect as.counterfun.cf" readonly>
-<button type="button" class="btn btn-success mx-1" onclick="copy('#txtas')"><i class="fonts font-paste"></i></button>
-<button type="button" class="btn btn-info"><i class="fontb font-steam" onclick="href('steam://connect/as.counterfun.cf')"></i></button>
-</div>
-<div class="input-group my-1">   
-<input type="text" class="form-control bg-warning border-success text-success" id="txtus" placeholder="connect us.counterfun.cf" readonly>
-<button type="button" class="btn btn-success mx-1" onclick="copy('#txtus')"><i class="fonts font-paste"></i></button>
-<button type="button" class="btn btn-info"><i class="fontb font-steam" onclick="href('steam://connect/us.counterfun.cf')"></i></button>
-</div>
-<iframe data-aa='1134402' src='http://acceptable.a-ads.com/1134402?size=Adaptive&background_color=ffc107&text_color=6c757d&title_color=6c757d&title_hover_color=6c757d&link_color=6c757d&link_hover_color=6c757d' scrolling='no' style='border:0px; padding:0; overflow:hidden' allowtransparency='true'></iframe>
-</div>
-</div>
-</div>
+<div class="jumbotron text-white mt-3">
+<h1 class="display-4">Welcome to <b>CounterFun</b></h1>
+<p class="lead">A server dedicated to bring fun, joy and something new into <b>Counter-Strike</b> 1.6 game. This is a one man operation so it might take time to add new maps and stuff.</p>
+<hr class="my-4">
+<p>This website is under construction. Meanwhile you can join a server close to your region below.</p>
+<a class="btn btn-primary btn-lg" href="steam://connect/as.counterfun.cf" role="button">United States</a>
+<a class="btn btn-primary btn-lg" href="steam://connect/as.counterfun.cf" role="button">Asia</a>
 </div>
 </div>
 </div>
