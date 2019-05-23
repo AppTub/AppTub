@@ -6646,7 +6646,7 @@ body, html {
   min-height: 100%; }
 
 body {
-  background-image: url("http://steamcdn-a.akamaihd.net/steam/apps/10/0000002538.1920x1080.jpg");
+  background-image: url("https://steamcdn-a.akamaihd.net/steam/apps/10/0000002538.1920x1080.jpg");
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -6668,7 +6668,7 @@ body {
 .header {
   height: 550px;
   width: 100%;
-  background: url("http://steamcdn-a.akamaihd.net/steam/apps/10/0000002539.1920x1080.jpg");
+  background: url("https://steamcdn-a.akamaihd.net/steam/apps/10/0000002539.1920x1080.jpg");
   background-size: cover;
   background-position: center center;
   position: relative; }
