@@ -6713,9 +6713,9 @@ section .image {
   background-position: center center;
   background-size: cover; }
   section .image.image1 {
-    background-image: url("http://steamcdn-a.akamaihd.net/steam/apps/10/0000002541.1920x1080.jpg"); }
+    background-image: url("../img/about.jpg"); }
   section .image.image2 {
-    background-image: url("http://steamcdn-a.akamaihd.net/steam/apps/10/0000002540.1920x1080.jpg"); }
+    background-image: url("../img/rules.jpg"); }
 section .text {
   padding: 40px;
   max-width: 700px; }
